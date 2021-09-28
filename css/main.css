@@ -141,6 +141,10 @@ nav ul {
 footer .content-wrapper {
   width: 55%;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 footer p {
@@ -356,10 +360,191 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/*-------------------- Tablet Styles --------------------*/
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+  /*-------------------- Tablet Header - Footer Styles --------------------*/
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  header .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  header nav {
+    width: 30%;
+  }
+  header ul {
+    justify-content: space-between;
+  }
+
+  footer .content-wrapper {
+    width: 70%;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  /*-------------------- Tablet Styles - Homepage  --------------------*/
+
+  /* Aside */
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0;
+  }
+
+  .form-description,
+  .form {
+    width: 48%;
+  }
+
+  /* Features */
+  .features h2 {
+    margin-bottom: 10px;
+  }
+
+  .features .features-items {
+    justify-content: space-around;
+  }
+
+  .features article {
+    width: 35%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    margin-bottom: 100px;
+  }
+
+  /*-------------------- Tablet Styles - About  --------------------*/
+
+  /* Mission */
+  .mission .content-wrapper .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mission-content p {
+    width: 48%;
+  }
+
+  /* Contact */
+  .contact-section h2 {
+    margin: 40px 0;
+  }
+
+  .contact-section .content-wrapper .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-content div {
+    width: 48%;
+  }
+
+
+  /*-------------------- Tablet Styles - Faq  --------------------*/
+
+  /* FAQ */
+  .faq h1 {
+    width: 100%;
+  }
+
+  .faq .content-wrapper {
+   justify-content: space-between;
+   align-items: flex-start;
+  }
+
+  .faq .content-wrapper div {
+    width: 45%;
+  }
+
+  .faq h2 {
+    margin-top: 30px;
+  }
+
 }
+
+/*-------------------- Desktop Styles -   --------------------*/
+@media only screen and (min-width: 1200px) {
+
+.content-wrapper {
+  max-width: 960px;
+}
+
+/*-------------------- Desktop Header - Footer Styles --------------------*/
+
+footer .footer-content {
+  justify-content: space-between;
+}
+
+/*-------------------- Desktop Styles - Homepage  --------------------*/
+/* Hero */
+.hero-section .content-wrapper{
+  margin: 0;
+}
+
+/*Aside*/
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+.form-description,
+.form {
+  width: 30%;
+}
+
+/* Features */
+.features h2 {
+  margin-bottom: 70px;
+}
+
+.features article {
+  width: 26%;
+}
+
+
+/*-------------------- Desktop Styles - About  --------------------*/
+/* Mission */
+.mission h1 {
+  margin: 10px 0 ;
+}
+
+/* Contact */
+
+.contact-section h2 {
+  margin: 0;
+}
+
+  /*-------------------- Desktop Styles - Faq  --------------------*/
+
+  /* FAQ */
+.faq h2 {
+  margin-top: 10px;
+}
+
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
