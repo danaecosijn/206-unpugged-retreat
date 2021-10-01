@@ -278,6 +278,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/herohomepage.jpg') center no-repeat #2a423a;
+  background-size: cover;
 }
 
 
