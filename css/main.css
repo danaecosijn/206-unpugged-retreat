@@ -135,19 +135,15 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
   font-style: normal;
-}
-
-aside .form {
-  margin-top: 30px;
 }
 
 input[type=text] {
@@ -199,6 +195,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
   width: 100%;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper p {
@@ -297,6 +301,8 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/featuresbackground.jpg') center no-repeat #2a423a;
+  background-size: cover;
 }
 
 .features h2 {
@@ -494,10 +500,18 @@ h4 {
 }
   /*-------------------- Tablet Header - Footer Styles --------------------*/
 
+
   header .content-wrapper {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
   .header-divider {
     width: 0;
     height: 0;
@@ -554,12 +568,39 @@ h4 {
   .reviews article {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+  }
+
+  .reviews figure {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    }
+  }
+
+  .reviews div {
+    width: 45%;
+  }
+
+  .reviews h3 {
+    width: 100%;
+    margin-top:0;
   }
 
   .reviews h2 {
     margin-bottom: 100px;
   }
 
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
   /*-------------------- Tablet Styles - About  --------------------*/
 
   /* Mission */
