@@ -90,6 +90,7 @@ textarea {
 
 html {
   font-size: 16px;
+  color: #e2e3ed;
 }
 
 body {
@@ -100,6 +101,9 @@ body {
 ul,
 ol {
   list-style: none;
+  font-size: 1.14em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 a {
@@ -107,9 +111,14 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.571em;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.571em;
+  color: #e2e3ed;
 }
 
 h3,
@@ -117,6 +126,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.714em;
   line-height: 1.25;
+  color: e2e3ed;
 }
 
 p {
@@ -136,6 +146,32 @@ address {
   font-style: normal;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -149,6 +185,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header {
@@ -161,6 +198,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  width: 100%;
 }
 
 header .content-wrapper p {
@@ -171,6 +209,7 @@ header .content-wrapper p {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background-color: #3a3a3a;
 }
 
 header nav {
@@ -185,10 +224,11 @@ nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
 
 footer .content-wrapper {
-  width: 55%;
+  width: 80%;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
@@ -198,6 +238,11 @@ footer .content-wrapper {
 
 footer p {
   margin: 0;
+  text-align: center;
+}
+
+footer h4 {
+  text-align: center;
 }
 
 footer .contact {
@@ -242,6 +287,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 /* Features */
@@ -269,6 +315,7 @@ aside {
 .features article {
   width: 60%;
   margin: 30px 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -276,6 +323,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -294,6 +342,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 /* Contact */
@@ -302,6 +351,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 
@@ -313,6 +363,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -415,10 +466,30 @@ aside {
    ========================================================================== */
 /*-------------------- Tablet Styles --------------------*/
 @media only screen and (min-width: 768px) {
-  .content-wrapper {
-    max-width: 640px;
-    margin: 100px 0;
-  }
+
+/* Tablet general style adjustments */
+ul,
+ol {
+  font-size: 1.1428em;
+}
+
+h1 {
+  font-size: 3.428em;
+}
+
+h2 {
+  font-size: 2.571em;
+}
+
+h3,
+h4 {
+  font-size: 1.714em;
+}
+
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
   /*-------------------- Tablet Header - Footer Styles --------------------*/
 
   header .content-wrapper {
@@ -432,7 +503,7 @@ aside {
   }
 
   header nav {
-    width: 30%;
+    width: 20%;
   }
   header ul {
     justify-content: space-between;
@@ -540,6 +611,25 @@ aside {
 
 /*-------------------- Desktop Styles -   --------------------*/
 @media only screen and (min-width: 1200px) {
+
+/* Desktop general style adjustments */
+ul,
+ol {
+  font-size: 1.14em;
+  }
+
+p {
+  font-size: 1.285em;
+}
+
+h1 {
+  font-size: 4.285em;
+}
+
+h3,
+h4 {
+  font-size: 2.142em;
+}
 
 .content-wrapper {
   max-width: 960px;
