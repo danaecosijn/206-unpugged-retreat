@@ -628,6 +628,11 @@ h4 {
     width: 48%;
   }
 
+ /* Map */
+.map figure {
+   padding-bottom: 44%;
+ }
+
   /* Contact */
   .contact-section h2 {
     margin: 40px 0;
@@ -734,6 +739,11 @@ aside .content-wrapper {
 /* Mission */
 .mission h1 {
   margin: 10px 0 ;
+}
+
+/* Map */
+.map figure {
+  padding-bottom: 35%;
 }
 
 /* Contact */
